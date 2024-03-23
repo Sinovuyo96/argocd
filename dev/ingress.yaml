@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: myapp-ingress
   namespace: myapp
-  annotations:
+  # annotations:
     # spec.ingressClassName: alb
     # alb.ingress.kubernetes.io/healthcheck-protocol: 'HTTP'
     # alb.ingress.kubernetes.io/target-type: 'ip'
