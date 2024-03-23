@@ -4,7 +4,7 @@ metadata:
   name: myapp-ingress
   namespace: argocd
   annotations:
-    # spec.ingressClassName: alb
+    spec.ingressClassName: alb
     alb.ingress.kubernetes.io/healthcheck-protocol: 'HTTP'
     alb.ingress.kubernetes.io/target-type: 'ip'
     alb.ingress.kubernetes.io/healthcheck-port: 'traffic-port'
