@@ -20,7 +20,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: demo.sinovuyo.me
+  - host: demo.sinovuyo.me
     http:
       paths:
       - backend:
