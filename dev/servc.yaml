@@ -4,12 +4,11 @@ metadata:
   name: myapp-service
   annotations:  
     # This annotation is only required if you are creating an internal facing ELB. Remove this annotation to create public facing ELB.  
-    alb.ingress.kubernetes.io/load-balancer-name: 'ingress-alb-sino-image'
     alb.ingress.kubernetes.io/ip-address-type: 'ipv4'
     # alb.ingress.kubernetes.io/scheme: 'internet-facing' #by default the lb will be internet facing
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]' | '[{"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/target-type: 'ip'
-    alb.ingress.kubernetes.io/success-codes: '200-499'
+    # alb.ingress.kubernetes.io/success-codes: '200-499'
 spec:
   selector:
     app: myapp
