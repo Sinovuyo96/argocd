@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: myapp-ingress
-  namespace: argocd
+  namespace: myapp
   annotations:
     spec.ingressClassName: alb
     alb.ingress.kubernetes.io/healthcheck-protocol: 'HTTP'
